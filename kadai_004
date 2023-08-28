@@ -1,1 +1,32 @@
+Last login: Mon Aug 28 21:58:39 on ttys000
+yuichi@yuuichinoAir ~ % cd Desktop/
+yuichi@yuuichinoAir Desktop % mkdir git_challenge
+yuichi@yuuichinoAir Desktop % ls
+git_challenge	git_tutorial	kadai_005
+yuichi@yuuichinoAir Desktop % cd git_challenge
+yuichi@yuuichinoAir git_challenge % git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /Users/yuichi/Desktop/git_challenge/.git/
+yuichi@yuuichinoAir git_challenge % git add hello_world.txt
+yuichi@yuuichinoAir git_challenge % git commit -m "hello_world.txtを追加"
+[master (root-commit) 07e9869] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+yuichi@yuuichinoAir git_challenge % git add hello_world.txt
+yuichi@yuuichinoAir git_challenge % git commit -m "日本語訳を追記"
+[master b98dbfe] 日本語訳を追記
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+yuichi@yuuichinoAir git_challenge % git log --oneline
+b98dbfe (HEAD -> master) 日本語訳を追記
+07e9869 hello_world.txtを追加
+yuichi@yuuichinoAir git_challenge % 
 
